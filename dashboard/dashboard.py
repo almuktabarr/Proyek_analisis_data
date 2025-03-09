@@ -136,6 +136,10 @@ with st.sidebar:
 
     start_hour, end_hour = st.slider("Rentang Jam", min_value=0, max_value=23, value=(0, 23), format="%d:00")
 
+    st.write("Tipe Pengguna")
+    show_registered = st.checkbox("Registered", value=True)
+    show_casual = st.checkbox("Casual", value=True)
+    
     st.write("Kondisi Musim")
     season_labels = {1: "Musim Semi", 2: "Musim Panas", 3: "Musim Gugur", 4: "Musim Dingin"}
     selected_season = []
